@@ -1,0 +1,41 @@
+{
+  "mode":"release",
+  "name": "telegraf",
+  "database":{
+    "username":"eth",
+    "password":"eth_)(*)*12w",
+    "dbname":"eth",
+    "address":"ip",
+    "port":"3306",
+    "maxidleconns":10,
+    "maxopenconns":100,
+    "logmode":true
+  },
+  "redis": {
+    "host": "127.0.0.1:16379",
+    "port": 16379,
+    "maxidle": 3,
+    "maxactive": 500,
+    "password": "ABBBBB"
+  },
+  "influxdb":{
+    "username":"eth",
+    "password":"eth_)(*)*12w",
+    "dbname":"eth",
+    "address":"http://ip:3306",
+    "maxidleconns":10,
+    "maxopenconns":100,
+    "logmode":false,
+    "blockduration":1,
+    "blockstart": "2020-04-03"
+  },
+  "server":{
+    "port":8080,
+    "readtimeout":3000,
+    "writetime":3000
+  },
+  "node": {
+    "count": 100,
+    "interval": 30
+  }
+}
